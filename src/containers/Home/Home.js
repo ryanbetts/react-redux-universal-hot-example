@@ -75,10 +75,6 @@ export default class Home extends Component {
             <li><a href="https://github.com/rackt/redux" target="_blank">Redux</a>'s futuristic <a
               href="https://facebook.github.io/react/blog/2014/05/06/flux.html" target="_blank">Flux</a> implementation
             </li>
-            <li><a href="https://github.com/gaearon/redux-devtools" target="_blank">Redux Dev Tools</a> for next
-              generation DX (developer experience).
-              Watch <a href="https://www.youtube.com/watch?v=xsSnOQynTHs" target="_blank">Dan Abramov's talk</a>.
-            </li>
             <li><a href="https://github.com/rackt/redux-router" target="_blank">Redux Router</a> Keep
               your router state in your Redux store
             </li>

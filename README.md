@@ -23,7 +23,6 @@ This is a starter boilerplate app I've put together using the following technolo
 * [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
 * [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)
 * [Redux](https://github.com/rackt/redux)'s futuristic [Flux](https://facebook.github.io/react/blog/2014/05/06/flux.html) implementation
-* [Redux Dev Tools](https://github.com/gaearon/redux-devtools) for next generation DX (developer experience). Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs).
 * [React Router Redux](https://github.com/reactjs/react-router-redux) Redux/React Router bindings.
 * [ESLint](http://eslint.org) to maintain a consistent code style
 * [redux-form](https://github.com/erikras/redux-form) to manage form state in Redux
@@ -50,20 +49,6 @@ npm run dev
 ```
 
 The first time it may take a little while to generate the first `webpack-assets.json` and complain with a few dozen `[webpack-isomorphic-tools] (waiting for the first Webpack build to finish)` printouts, but be patient. Give it 30 seconds.
-
-### Using Redux DevTools
-
-[Redux Devtools](https://github.com/gaearon/redux-devtools) are enabled by default in development.
-
-- <kbd>CTRL</kbd>+<kbd>H</kbd> Toggle DevTools Dock
-- <kbd>CTRL</kbd>+<kbd>Q</kbd> Move DevTools Dock Position
-- see [redux-devtools-dock-monitor](https://github.com/gaearon/redux-devtools-dock-monitor) for more detailed information.
-
-If you have the 
-[Redux DevTools chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) installed it will automatically be used on the client-side instead.
-
-If you want to disable the dev tools during development, set `__DEVTOOLS__` to `false` in `/webpack/dev.config.js`.  
-DevTools are not enabled during production.
 
 ## Building and Running Production Server
 
@@ -199,7 +184,7 @@ require('aModule/dist/style.css');
 ...
 ```
 
-**NOTE** In order to use this method with **scss or less** files one more modification must be made. In both `dev.config.js` and `prod.config.js` in the loaders for less and scss files remove 
+**NOTE** In order to use this method with **scss or less** files one more modification must be made. In both `dev.config.js` and `prod.config.js` in the loaders for less and scss files remove
 
 1. `modules`
 2. `localIdentName...`
@@ -240,18 +225,18 @@ The first deploy might take a while, but after that your `node_modules` dir shou
 This project moves fast and has an active community, so if you have a question that is not answered below please visit our [Discord channel](https://discord.gg/0ZcbPKXt5bZZb1Ko) or file an issue.
 
 
-## Roadmap 
+## Roadmap
 
-Although this isn't a library, we recently started versioning to make it easier to track breaking changes and emerging best practices. 
+Although this isn't a library, we recently started versioning to make it easier to track breaking changes and emerging best practices.
 
 * [Inline Styles](docs/InlineStyles.md) - CSS is dead
 
 ## Contributing
 
-I am more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :) 
+I am more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :)
 
-If you would like to submit a pull request, please make an effort to follow the guide in [CONTRIBUTING.md](CONTRIBUTING.md). 
- 
+If you would like to submit a pull request, please make an effort to follow the guide in [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ---
 Thanks for checking this out.
 
