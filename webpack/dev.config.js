@@ -101,6 +101,7 @@ module.exports = {
   },
   plugins: [
     // hot reload
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.IgnorePlugin(/webpack-stats\.json$/),
     new webpack.DefinePlugin({
